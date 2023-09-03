@@ -137,8 +137,6 @@
         <form action="">
           <p>الاسم *</p>
           <input class="main-input" type="text" name="name" placeholder="الاسم الرباعى" required>
-          <p>رقم الهوية الوطنية *</p>
-          <input class="main-input" type="text" name="id" placeholder="رقم الهوية الوطنية / الاقامة" required>
           <p>تاريخ الميلاد *</p>
           <input class="main-input" type="date" name="birth-date" placeholder="تاريخ الميلاد" required>
           <p>المدينة *</p>
@@ -154,10 +152,30 @@
           <input class="main-input" type="text" name="phone-number" placeholder="رقم الهاتف" required>
           <p>البريد الالكترونى *</p>
           <input class="main-input" type="email" name="mail" placeholder="البريد الالكترونى" required>
+          <p>الخبرات *</p>
+          <select class="main-input" name="experience" id="" required>
+            <option value="1" selected >نعم</option>
+            <option value="2">لا</option>
+          </select>
+          <p>المهارات *</p>
+          <input class="main-input" type="text" name="skills" placeholder="مهاراتك" required>
           <p>مستوى اللغة الانجليزية *</p>
-          <input class="main-input" type="text" name="english-level" placeholder="مستواك فى الانجليزية" required>
-          <p>قدرتك على التعامل مع فريق *</p>
-          <input class="main-input" type="text" name="deal-with-team" placeholder="قدرتك فى التعامل مع فريقك" required>
+          <select class="main-input" name="english-level" id="" required>
+            <option value="1" selected >ممتاز</option>
+            <option value="2">جيد جدا</option>
+            <option value="2">مقبول</option>
+          </select>
+          <p>المستوى التعليمى *</p>
+          <select class="main-input" name="education-level" id="" required>
+            <option value="1" selected >بكالوريوس</option>
+            <option value="2">ثانوى</option>
+            <option value="2">دبلوم</option>
+          </select>
+          <p>التحمل تحت الضغط *</p>
+          <select class="main-input" name="work-under-pressure" id="" required>
+            <option value="1" selected >نعم</option>
+            <option value="2">لا</option>
+          </select>
           <p>تحدث عن نفسك *</p>
           <textarea  class="main-input" name="" id="" cols="30" rows="10"></textarea>
           <input class="btn" type="submit" value="ارسال">

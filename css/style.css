@@ -109,9 +109,9 @@ header .nav-bar li a {
   transition: var(--main-transition);
 }
 header .container .toggle-menu {
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   color: var(--main-color);
-  padding: 5px 10px;
+  padding: 3px 8px;
   display: none;
 }
 @media (max-width:768px) {
@@ -130,7 +130,8 @@ ul.nav-bar.active {
   position: absolute;
   display: flex;
   justify-content: center;
-  background: #ddd;
+  /* background: #ddd; */
+  background-color: var(--main-color-alt);
   top: 80px;
   left: 0;
   width: 100%;
@@ -141,9 +142,9 @@ ul.nav-bar.active {
 }
 
 header .nav-bar.active li {
+  display: block;
   background: #fff;
   border: 0.1rem solid rgba(0, 0, 0,.1 );
-  display: block;
 }
 
 /* End Header */
